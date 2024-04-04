@@ -1,0 +1,73 @@
+@import url(../../index.css);
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: 80px;
+    transition: top 0.4s ease;
+    box-sizing: border-box;
+    color: white;
+    background-color: var(--navbar-color);
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 2rem;
+    margin-left: auto;
+    padding-right: 50px;
+}
+
+ul button{
+    border: none;
+    background-color: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    background-color: transparent;
+    border-radius: 0;
+    transition: border  0.4s ease;
+}
+
+ul button:hover {
+    border: none;
+    background-color: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid white;
+    border-top: 4px solid transparent;
+}
+
+.logo{
+    margin-left: 50px;
+    scale: 0.8;
+}
+
+/* Page scroll fill bar */
+.scroll-watcher{
+    height: 4px;
+    position: fixed;
+    bottom: -4px;
+    width: 100%;
+    z-index: 101;
+    background-color: #e6c690;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+@keyframes scroll-watcher {
+    to { scale: 1 0.5;}
+}
