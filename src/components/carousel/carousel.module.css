@@ -1,0 +1,77 @@
+@import url(../../index.css);
+
+.carousel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(90deg, #20272C, #2D3E43 50%, #1B2227);
+    z-index: 10;
+    color: black;
+    padding: 2rem;
+    gap: 2rem;
+    position: relative;
+    transition: transform 0.5s ease; /* Add a transition */
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 10%;
+    box-sizing: border-box;
+    background-color: white;
+    height: 80vh;
+    overflow: auto;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.image{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+.price{
+    font-weight: bold;
+    font-size: 18px;
+}
+:root{
+    --button-height: 50px;
+    --button-width: 50px;
+}
+.carouselButton{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 100%;
+    height: var(--button-height);
+    width: var(--button-width);
+    z-index: 30;
+    transition: scale 0.3s ease;
+}
+.btnLeft{
+    position: absolute;
+    top: calc(50% - calc(var(--button-height) / 2));
+    left: 10px;
+}
+.btnRight{
+    position: absolute;
+    top: calc(50% - calc(var(--button-height) / 2));
+    right: 10px;
+}
+.carouselButton:active{
+    scale: 0.95;
+}
+.svg{
+    width: 30px;
+    height: 30px;
+}

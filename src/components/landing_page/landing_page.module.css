@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    height: 100vh;
+    min-height: 100vh;
     color: black;
     padding-top: calc(80px + 2rem);
     box-sizing: border-box;
@@ -22,6 +22,7 @@
     border-radius: 15px;
 }
 .landingImageContainer{
+    height: 90vh;
     position: relative;
     display: flex;
     align-items: center;

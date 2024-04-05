@@ -2,4 +2,61 @@
 
 .section{
     background-color: var(--navbar-color);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8%;
+}
+.section > .links {
+    animation: fade-in ease forwards;
+    animation-timeline: view();
+}
+.links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 2px solid gray;
+}
+.links > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: none;
+    gap: none;
+    padding-bottom: 2rem;
+}
+.socials{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    margin: 6px;
+    font-size: 18px;
+}
+p:hover{
+    color: blanchedalmond;
+}
+.logoContainer{
+    margin: none;
+}
+@keyframes fade-in {
+    from { opacity: 0; transform: translateX(-300px);}
+    85% { transform: translateY(0px); opacity: 1;}
+    to {  }
+}
+.socialsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.socialsContainer > a{
+    width: 40px;
+    height: 40px;
 }

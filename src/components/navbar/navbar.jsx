@@ -34,7 +34,6 @@ function Navbar() {
 
 
     function tester (){
-        console.log('testing testing..')
     }
     
     return (
