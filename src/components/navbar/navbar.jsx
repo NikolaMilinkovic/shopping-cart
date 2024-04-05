@@ -2,10 +2,12 @@ import './navbar.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavButton from './navbar_button';
+import CartButton from './cart_button';
 
 function Navbar() {
     const [prevScrollPos, setScrollPos] = useState(window.scrollY)
     const [top, setTop] = useState(0)
+    
 
     useEffect (() => {
 
@@ -52,6 +54,11 @@ function Navbar() {
                 <Link to='store'>
                     <li>
                         <NavButton text= 'Button_2' onClick= {() => tester()}/>
+                    </li>
+                </Link>
+                <Link to='cart'>
+                    <li>
+                        <CartButton onClick= {() => tester()}/>
                     </li>
                 </Link>
             </ul>

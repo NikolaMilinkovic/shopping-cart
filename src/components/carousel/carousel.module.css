@@ -30,6 +30,8 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 10%;
 }
 .image{
     object-fit: contain;
@@ -38,6 +40,8 @@
     box-sizing: border-box;
 }
 .price{
+    display: flex;
+    margin-top: auto;
     font-weight: bold;
     font-size: 18px;
 }
@@ -74,4 +78,10 @@
 .svg{
     width: 30px;
     height: 30px;
+}
+.cardButton{
+    color: white;
+}
+.cardButton:active{
+    scale: 0.95;
 }

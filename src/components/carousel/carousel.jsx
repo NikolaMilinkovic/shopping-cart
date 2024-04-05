@@ -11,27 +11,19 @@ function Carousel() {
     const [indexMiddle, setIndexMiddle] = useState(1);
     const [indexRight, setIndexRight] = useState(2);
 
-    console.log(products)
-
 
     function previous(){
         if(indexLeft > 0){
             setIndexLeft(prevIndexLeft => prevIndexLeft - 1)
-            console.log(products[indexLeft])
             setIndexMiddle(prevIndexMiddle => prevIndexMiddle - 1 )
-            console.log(products[indexMiddle])
             setIndexRight(prevIndexRight => prevIndexRight - 1)
-            console.log(products[indexRight])
         }
     }
     function next(){
         if(indexRight < products.length-1){
             setIndexLeft(prevIndexLeft => prevIndexLeft + 1)
-            console.log(products[indexLeft])
             setIndexMiddle(prevIndexMiddle => prevIndexMiddle + 1 )
-            console.log(products[indexMiddle])
             setIndexRight(prevIndexRight => prevIndexRight + 1)
-            console.log(products[indexRight])
         }
     }
 

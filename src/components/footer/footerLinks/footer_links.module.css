@@ -10,8 +10,8 @@
     padding: 0px 8%;
 }
 .section > .links {
-    animation: fade-in ease forwards;
-    animation-timeline: view();
+    /* animation: fade-in ease forwards;
+    animation-timeline: view(); */
 }
 .links{
     width: 100%;
@@ -30,16 +30,25 @@
 }
 .socials{
     display: flex;
+    flex-direction: column;
     height: 50%;
     width: 100%;
     align-items: center;
     justify-content: center;
+    /* animation: fade-in-socials ease forwards;
+    animation-timeline: view(); */
+}
+@keyframes fade-in-socials {
+    from { opacity: 0; transform: translateX(-300px);}
+    40% { transform: translateY(0px); opacity: 1;}
+    to {  }
 }
 p{
     margin: 6px;
     font-size: 18px;
 }
-p:hover{
+div > a:hover,
+p > a:hover{
     color: blanchedalmond;
 }
 .logoContainer{
@@ -47,7 +56,7 @@ p:hover{
 }
 @keyframes fade-in {
     from { opacity: 0; transform: translateX(-300px);}
-    85% { transform: translateY(0px); opacity: 1;}
+    75% { transform: translateY(0px); opacity: 1;}
     to {  }
 }
 .socialsContainer{
@@ -55,6 +64,7 @@ p:hover{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 .socialsContainer > a{
     width: 40px;

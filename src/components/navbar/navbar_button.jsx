@@ -5,7 +5,7 @@ import React from 'react';
 
 function NavButton({onClick, text}) {
     return (
-        <button key={uuid()} onClick={onClick} type='button'>
+        <button className='nav-btn' key={uuid()} onClick={onClick} type='button'>
             {text}
         </button>
     )

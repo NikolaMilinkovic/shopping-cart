@@ -9,11 +9,20 @@ import Carousel from './components/carousel/carousel'
 export const ProductsData = createContext({
     products: [],
     categories: [],
+    cartItems: [],
+    addToCart: () => {}
 });
 
 function App() {
     const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
+    const [cartAmount, setCartAmount] = useState(0)
+
+    useEffect(() => {
+        console.log(`cart amount is: ${cartAmount}`);
+        console.log(cartItems);
+    }, [cartAmount, cartItems]);
 
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
@@ -27,7 +36,14 @@ function App() {
 
     }, []);
 
-    const contextValue = useMemo(() => ({products, categories}), [products, categories]);
+
+    const contextValue = useMemo(() => {
+        const addToCart = (product) => {
+            setCartItems(prevCartItems => [...prevCartItems, product])
+            setCartAmount(prevCartAmount => prevCartAmount + 1)
+        }
+        return ({products, categories, cartItems, addToCart})}, 
+    [products, categories, cartItems, setCartItems, setCartAmount]);
 
     return (
         <ProductsData.Provider value={ contextValue }>

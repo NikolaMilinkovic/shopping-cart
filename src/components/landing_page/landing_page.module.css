@@ -20,6 +20,7 @@
     overflow: hidden;
     image-rendering: -webkit-optimize-contrast;
     border-radius: 15px;
+    backface-visibility: hidden;
 }
 .landingImageContainer{
     height: 90vh;
@@ -31,7 +32,66 @@
     animation: fade-in-images 1.2s ease forwards;
     z-index: 7;
     padding-bottom: 2rem;
+    cursor: pointer;
+    position: relative;
+    perspective: 800px;
 }
+.flip{
+    animation: flip-card 0.7s linear forwards;
+}
+.flip-back{
+    animation: flip-card-back 0.7s linear forwards;
+}
+@keyframes flip-card {
+    from {
+        transform: rotateY(0deg)
+    } to {
+        transform: rotateY(180deg)
+    }
+}
+@keyframes flip-card-back {
+    from {
+        transform: rotateY(180deg)
+    } to {
+        transform: rotateY(0deg)
+    }
+}
+.imgBackground{
+    position: absolute;
+    /* background-color: #141711; */
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 10%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    backface-visibility: hidden;
+}
+.flip-background{
+    animation: flip-background 0.7s linear forwards;
+}
+.flip-back-background{
+    animation: flip-background-back 0.7s linear forwards;
+}
+@keyframes flip-background {
+    from {
+        transform: rotateY(0deg)
+    } to {
+        transform: rotateY(-180deg)
+    }
+}
+@keyframes flip-background-back {
+    from {
+        transform: rotateY(-180deg)
+    } to {
+        transform: rotateY(0deg)
+    }
+}
+
 .landingImageContainer:hover,
 .h2.para-header:hover{
     scale: 1.05;
@@ -44,6 +104,7 @@ h2.para-header{
     bottom: 2rem;
     transition: scale 0.3s ease;
     text-shadow: #141711 1px 3px 3px;
+    backface-visibility: hidden;
 }
 
 @keyframes fade-in-images {

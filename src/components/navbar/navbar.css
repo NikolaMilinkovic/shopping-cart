@@ -71,3 +71,20 @@ ul button:hover {
 @keyframes scroll-watcher {
     to { scale: 1 0.5;}
 }
+.shopping-cart{
+    width: 23px;
+    height: 23px;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    position: relative;
+}
+.shopping-cart-num{
+    position: absolute;
+    color: lime;
+    top: 0;
+    right: 24px;
+}

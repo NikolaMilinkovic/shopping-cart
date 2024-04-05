@@ -73,6 +73,9 @@ function FooterLinks() {
                         <img className={styles.logo} src='../src/assets/footer_icons/square-github.svg' alt='Store logo' />
                     </a>
                 </div>
+                <p>©Copiright. All right reserved</p>
+                <p>Icons from Font Awesome | Images from Unsplash</p>
+                <p>Made by <a href="https://github.com/NikolaMilinkovic">Nikola Milinkovic</a></p>
             </div>
         </section>
     );
