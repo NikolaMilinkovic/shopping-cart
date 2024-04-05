@@ -1,16 +1,18 @@
-import React, { useContext, useState, useEffect, useCallback } from 'react';
+import React, { useContext } from 'react';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import styles from './carousel.module.css';
 import { ProductsData } from '../../App';
 
 function CardButton({product}) {
-    const {addToCart, cartItems} = useContext(ProductsData);
-    const [text, setText] = useState('Add to cart');
-
+    const {addToCart} = useContext(ProductsData);
 
     return(
-        <button onClick={() => addToCart(product)} type='button' className={styles.cardButton} key={uuid()}>Add to cart</button>
+        <div className={styles.information}>
+            <span className={styles.price}>{product.price} $</span>
+            <button onClick={() => addToCart(product)} type='button' className={styles.cardButton} key={uuid()}>Add to cart</button>
+            
+        </div>
     )
 }
 

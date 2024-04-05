@@ -430,3 +430,31 @@ button:focus-visible {
 section {
   display: flex;
 }
+
+/* Website Scroll */
+:root{
+  --scrollbar-0: gray;
+  --scrollbar-100: rgb(30, 30, 30);
+}
+
+::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+background-color: black;
+}
+
+::-webkit-scrollbar
+{
+width: 10px;
+background-color: black;
+}
+
+::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+background-color: black;
+background-image: -webkit-linear-gradient(top,
+                      var(--scrollbar-0) 0%,
+                      var(--scrollbar-100) 100%);
+}
+/* \Website Scroll */

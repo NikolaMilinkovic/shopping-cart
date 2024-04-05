@@ -7,7 +7,6 @@ import CartButton from './cart_button';
 function Navbar() {
     const [prevScrollPos, setScrollPos] = useState(window.scrollY)
     const [top, setTop] = useState(0)
-    
 
     useEffect (() => {
 

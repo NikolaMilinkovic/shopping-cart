@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Store from './pages/store/Store';
 import App from './App';
+import { NotificationDataProvider } from './components/Contexts/NotificationDataProvider';
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <App />,
+        element:(
+            <NotificationDataProvider>
+                <App />
+            </NotificationDataProvider>
+        ) ,
     },
     {
         path: 'store',

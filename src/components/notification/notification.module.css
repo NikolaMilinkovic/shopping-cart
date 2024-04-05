@@ -1,0 +1,21 @@
+@import url(../../index.css);
+
+.notificationContainer{
+    position: fixed;
+    width: fit-content;
+    padding: 2rem;
+    border: 2px solid gray;
+    background-color: var(--navbar-color);
+    color: white;
+    z-index: 500;
+    text-align: center;
+}
+.close{
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    z-index: 501;
+}
+.close:active{
+    scale: 0.95;
+}

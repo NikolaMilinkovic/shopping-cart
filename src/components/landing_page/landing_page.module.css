@@ -23,7 +23,7 @@
     backface-visibility: hidden;
 }
 .landingImageContainer{
-    height: 90vh;
+    height: 85vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -37,10 +37,10 @@
     perspective: 800px;
 }
 .flip{
-    animation: flip-card 0.7s linear forwards;
+    animation: flip-card 0.6s linear forwards;
 }
 .flip-back{
-    animation: flip-card-back 0.7s linear forwards;
+    animation: flip-card-back 0.6s linear forwards;
 }
 @keyframes flip-card {
     from {
@@ -58,24 +58,25 @@
 }
 .imgBackground{
     position: absolute;
-    /* background-color: #141711; */
     display: flex;
     flex-direction: column;
     padding: 0rem 10%;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 85vh;
     width: 100%;
     border-radius: 15px;
     color: white;
     backface-visibility: hidden;
+    text-align: center;
+    transform: rotateY(-180deg)
 }
 .flip-background{
-    animation: flip-background 0.7s linear forwards;
+    animation: flip-background 0.6s linear forwards;
 }
 .flip-back-background{
-    animation: flip-background-back 0.7s linear forwards;
+    animation: flip-background-back 0.6s linear forwards;
 }
 @keyframes flip-background {
     from {

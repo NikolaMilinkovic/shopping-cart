@@ -10,11 +10,12 @@ function Card({data}) {
 
     return (
         <div key={uuid()} className={styles.card}>
-            <img className={styles.image} alt={data.title} src={data.image} />
+            <div className={styles.cardContainer}>
+                <img className={styles.image} alt={data.title} src={data.image} />
+            </div>
+            <h3>{data.title}</h3>
             <div className={styles.information}>
-                <h3>{data.title}</h3>
-                <p>{data.description}</p>
-                <span className={styles.price}>{data.price} $</span>
+                <p><br />{data.description}</p>
                 <CardButton product={data}/>
             </div>
         </div>
