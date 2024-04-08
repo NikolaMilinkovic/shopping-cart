@@ -32,7 +32,7 @@ function Carousel() {
         <section className={styles.carousel}>
             <CarouselButton
                 onClick={() => previous()}
-                iconUrl='../src/assets/img/arrow-left.svg'
+                iconUrl='/img/arrow-left.svg'
                 alt='button arrow left'
                 btnClass={styles.btnLeft}
             />
@@ -51,7 +51,7 @@ function Carousel() {
             )}
             <CarouselButton
                 onClick={() => next()}
-                iconUrl='../src/assets/img/arrow-right.svg'
+                iconUrl='/img/arrow-right.svg'
                 alt='button arrow right'
                 btnClass={styles.btnRight}
             />

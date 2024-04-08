@@ -41,7 +41,7 @@ function Navbar() {
         <nav style={{ top: `${top}px` }}>
             <Link to="/">
                 <div className='logo-container'>
-                    <img className='logo' src='../src/assets/img/infinity-logo.png' alt='Store logo'/>
+                    <img className='logo' src='/img/infinity-logo.png' alt='Store logo'/>
                 </div>
             </Link>
             <ul>

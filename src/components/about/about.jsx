@@ -7,7 +7,7 @@ function About() {
     function Image(){
 
         return(
-            <img className={styles.image} alt='City lights timelapse' src='../src/assets/img/road-lights.jpg' />
+            <img className={styles.image} alt='City lights timelapse' src='/img/road-lights.jpg' />
         )
     }
 
