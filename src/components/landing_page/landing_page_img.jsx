@@ -42,6 +42,8 @@ LandingPageImage.propTypes = {
     url: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     header: PropTypes.string.isRequired,
+    backgroundHeader: PropTypes.string.isRequired,
+    backgroundText: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired
 };
-
 export default LandingPageImage;

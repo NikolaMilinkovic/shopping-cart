@@ -2,7 +2,7 @@ import './navbar.css';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
-import { ProductsData } from '../../App';
+import { ProductsData } from '../Contexts/ProductsData';
 
 function CartButton({onClick}) {
     const {cartItems} = useContext(ProductsData)

@@ -1,7 +1,7 @@
 import '../footer.css';
 import React from 'react';
 import style from './footer_newsletter.module.css'
-import NewsletterButton from './newsletter_button';
+import NewsletterButton from './Newsletter_button';
 
 function FooterNewsletter() {
 

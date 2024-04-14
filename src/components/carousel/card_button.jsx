@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import styles from './carousel.module.css';
-import { ProductsData } from '../../App';
+import { ProductsData } from '../Contexts/ProductsData';
 
-function CardButton({product}) {
+const CardButton = React.memo(({ product }) => {
     const {addToCart} = useContext(ProductsData);
 
     return(
@@ -14,7 +14,8 @@ function CardButton({product}) {
             
         </div>
     )
-}
+});
+
 
 CardButton.propTypes = {
     product: PropTypes.shape({

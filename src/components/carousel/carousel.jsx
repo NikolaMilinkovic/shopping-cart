@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
-import Card from './card';
+import Card from './Card';
 import styles from './carousel.module.css'
-import { ProductsData } from '../../App';
-import CarouselButton from './carousel_button';
+import { ProductsData } from '../Contexts/ProductsData';
+import CarouselButton from './Carousel_button';
 
 
 function Carousel() {

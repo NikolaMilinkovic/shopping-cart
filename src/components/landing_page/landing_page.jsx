@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
 import styles from './landing_page.module.css';
-import LandingPageImage from './landing_page_img';
+import LandingPageImage from './Landing_page_img';
 
 
 function LandingPage() {

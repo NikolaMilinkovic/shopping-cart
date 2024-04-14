@@ -1,8 +1,8 @@
 import './navbar.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import NavButton from './navbar_button';
-import CartButton from './cart_button';
+import NavButton from './Navbar_button';
+import CartButton from './Cart_button';
 
 function Navbar() {
     const [prevScrollPos, setScrollPos] = useState(window.scrollY)

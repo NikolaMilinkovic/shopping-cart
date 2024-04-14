@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Store from './pages/store/Store';
 import App from './App';
+import { ProductsDataProvider } from './components/Contexts/ProductsData';
 import { NotificationDataProvider } from './components/Contexts/NotificationDataProvider';
 
 const router = createBrowserRouter([
     {
         path: '/',
         element:(
-            <NotificationDataProvider>
-                <App />
-            </NotificationDataProvider>
+            <ProductsDataProvider>
+                <NotificationDataProvider>
+                    <App />
+                </NotificationDataProvider>
+            </ProductsDataProvider>
         ) ,
     },
     {

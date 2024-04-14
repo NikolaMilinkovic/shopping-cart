@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import style from './footer_newsletter.module.css'
-import Notification from '../../notification/notification';
+import Notification from '../../notification/Notification';
 
 function NewsletterButton({text}) {
     const [showNotification, setShowNotification] = useState(false)

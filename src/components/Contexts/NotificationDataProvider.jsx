@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { createContext, useState, useMemo } from 'react';
 
 export const NotificationData = createContext({
@@ -16,6 +17,7 @@ export function NotificationDataProvider({ children }) {
         setShowNotification(false);
     };
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const contextValue = useMemo(() => ({ showPopup, hidePopup }), [showNotification]);
 
     return (

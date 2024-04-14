@@ -1,7 +1,7 @@
 import './footer.css';
 import React from 'react';
-import FooterLinks from './footerLinks/footer_links';
-import FooterNewsletter from './footerNewsletter/footer_newsletter';
+import FooterLinks from './footerLinks/Footer_links';
+import FooterNewsletter from './footerNewsletter/Footer_newsletter';
 
 function Footer() {
     return (
