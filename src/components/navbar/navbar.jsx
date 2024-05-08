@@ -61,7 +61,6 @@ function Navbar() {
                     </li>
                 </Link>
             </ul>
-            <div className='scroll-watcher' />
         </nav>
     )
 }

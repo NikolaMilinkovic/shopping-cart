@@ -14,7 +14,7 @@ const router = createBrowserRouter([
                 <NotificationDataProvider>
                     <App />
                 </NotificationDataProvider>
-            </ProductsDataProvider>
+            </ProductsDataProvider> 
         ) ,
     },
     {

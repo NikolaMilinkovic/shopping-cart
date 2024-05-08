@@ -1,8 +1,14 @@
-# React + Vite
+![Example Image](./public/img/landing-page.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Shopping Cart
+Online clothing store website. Consists of an landing page and a shopping cart mockup.<br>
+Uses API to fetch products and display them on the website.
 
-Currently, two official plugins are available:
+<!-- [Live Demo]() ✨ -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+**🧭 Possible Future Implementations**
+- User register and authentication
+
+## 💻 Built With
+![javascript](https://skillicons.dev/icons?i=react,js,html,css&perline=10)
